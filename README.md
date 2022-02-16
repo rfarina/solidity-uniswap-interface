@@ -19,7 +19,7 @@ weth: `https://docs.uniswap.org/protocol/reference/deployments`
 This will enable us to test the invocation of the Uniswap interfaces without first deploying the UniswapExample contract. 
 
 
-# Goals
+## Goals
 
 
 
@@ -27,7 +27,7 @@ This will enable us to test the invocation of the Uniswap interfaces without fir
 2. Provide a working example of how to implement interfaces in Solidity.
 
 
-# Implementation
+## Implementation
 
 To avoid paying gas fees for the deployment of the UniswapExample contract, the interfaces will be invoked directly from the compiled code without first deploying to Mainnet. As this is a view only process, there is no exchange of ether to execute the invocations.
 
@@ -44,19 +44,19 @@ This will be accomplished using the Ethereum Remix browser-based IDE at [https:/
 7. Click on getReserves. This will return the reserves of each token. The blockTimestampLast is also returned, but for this example it is ignored.
 
 
-# Conclusion
+## Conclusion
 
 This process shows how an interface can be used to allow one Smart Contract to invoke functions on another Smart Contract; and doing so entirely through the interface without deploying to the Blockchain. This is an effective way to test the UniswapExample contract without incurring gas fees for each deployment. Once fully tested and audited, the UniswapExample contract could then be deployed to the Ethereum Mainnet Blockchain. The UniswapExample.getTokenReserves() external function could then be invoked directly as needed.
 
 
-# Dependencies
+## Dependencies
 
 Remix**: **[https://remix.ethereum.org/](https://remix.ethereum.org/).
 
 Metamask: [https://metamask.io/](https://metamask.io/)
 
 
-# Attributions
+## Attributions
 
 [https://www.youtube.com/watch?v=YWtT0MNHYhQ](https://www.youtube.com/watch?v=YWtT0MNHYhQ) (starting at minute 4:28)
 
