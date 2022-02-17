@@ -8,7 +8,7 @@
 
 # OVERVIEW
 
-Solidity interfaces provide a means for one Smart Contract to invoke methods on another Smart Contract. In this case, the UniswapExample Smart contract will invoke functions on two Uniswap interfaces in order to get the current reserves of dai and weth that reside on the Ethereum Mainnet Blockchain. The interfaces are UniswapV2Factory and UniswapV2Pair.
+Solidity interfaces provide a means for one Smart Contract to invoke functions on another Smart Contract. In this case, the UniswapExample Smart contract will invoke functions on two Uniswap interfaces in order to get the current reserves of dai and weth that reside on the Ethereum Mainnet Blockchain. The interfaces are UniswapV2Factory and UniswapV2Pair.
 
 To implement the interfaces we must first obtain the contract address of the Uniswap factory; and the contract addresses of both the dai and weth tokens. They can be obtained directly at the following urls:
 
